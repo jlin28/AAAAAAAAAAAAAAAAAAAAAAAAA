@@ -82,4 +82,9 @@
     
     2) To uninstall, run sudo apt purge
 
+--------------------------------------------------------------------------------------------------------------------------------
 
+### HOW TO :: INSTALL NGINX
+   1) Install current linux updates (See HOW TO :: INSTALL LINUX UPDATES)
+
+   2) Install nginx with ```sudo apt install nginx```
