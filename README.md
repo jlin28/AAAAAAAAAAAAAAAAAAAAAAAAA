@@ -1,2 +1,0 @@
-# AAAAAAAAAAAAAAAAAAAAAAAAA
-spring softdev notes
