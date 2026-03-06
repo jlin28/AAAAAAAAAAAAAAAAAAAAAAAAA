@@ -85,8 +85,8 @@
 --------------------------------------------------------------------------------------------------------------------------------
 
 ### HOW TO :: INSTALL NGINX
-   1) Install current linux updates (See HOW TO :: INSTALL LINUX UPDATES)
-
-   2) Install nginx with sudo apt install nginx
+   1) To install, run sudo apt install
+    
+   2) To uninstall, run sudo apt purge
 
 --------------------------------------------------------------------------------------------------------------------------------
