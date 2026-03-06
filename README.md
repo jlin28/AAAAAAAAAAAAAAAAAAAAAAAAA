@@ -85,11 +85,17 @@
 --------------------------------------------------------------------------------------------------------------------------------
 
 ### HOW TO :: INSTALL NGINX
-   1) Install linux updates
+    1) Install linux updates
     
-   2) Install nginx by running sudo apt install nginx
+    2) Install nginx by running ***sudo apt install nginx***
 
-   3) To configure firewall to allow traffic, run sudo ufw allow 'Nginx HTTP'
+    3) To configure firewall to allow traffic, run sudo ufw allow 'Nginx HTTP'
 
+--------------------------------------------------------------------------------------------------------------------------------
+
+### HOW TO :: INSTALL NEW LINUX PACKAGES
+    1) To install, run sudo apt install <PKG>
+    
+    2) To uninstall, run sudo apt purge <PKG>
 
 --------------------------------------------------------------------------------------------------------------------------------
