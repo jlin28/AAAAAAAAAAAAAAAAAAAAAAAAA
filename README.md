@@ -21,9 +21,9 @@
 ### STEPS TO ALLOW SSH PERMISSIONS OF YOUR DEVICE INTO THE USER
     1) On your computer, go to your .ssh folder and get your public ssh key!!!!!!!!!!!!!!!!!!!
 
-    2) Go into your user from root or any other host that has access to that user (ssh root@YOUR_IP_ADDRESS)
+    2) Go into your user from root or any other host that has access to that user (**ssh root@YOUR_IP_ADDRESS**)
 
-    3) Use nano ~/.ssh/authorized_keys to get a terminal text editor that creates/edits the file authorized_keys
+    3) Use **nano ~/.ssh/authorized_keys** to get a terminal text editor that creates/edits the file authorized_keys
 
     4) Paste in your current computer’s public key
     
@@ -32,7 +32,7 @@
 --------------------------------------------------------------------------------------------------------------------------------
 
 ### HOW DO I GENERATE AN SSH KEY PAIR IN MY USER ??
-    1) Type ssh-keygen in the terminal
+    1) Type **ssh-keygen** in the terminal
 
     2) Press Enter/Return key (.ssh will be auto created if it doesn’t exist, no need to cd into it)
     
@@ -43,18 +43,18 @@
 --------------------------------------------------------------------------------------------------------------------------------
 
 ### SETTING UP AN UFW FIREWALL
-    1) In your root, enable your firewall by typing ufw enable
+    1) In your root, enable your firewall by typing **ufw enable**
 
-    2) Allow any connections with ufw allow [APPLICATION]
+    2) Allow any connections with **ufw allow [APPLICATION]**
 
-    3) VIEW your existing applications with ufw app list
+    3) VIEW your existing applications with **ufw app list**
 
-    4) With ufw status, you can then view the status of your firewall at anytime
+    4) With **ufw status**, you can then view the status of your firewall at anytime
 
 --------------------------------------------------------------------------------------------------------------------------------
 
 ### DISABLING ROOT LOGIN
-    1) On a user with sudo permissions, open the sshd_config file with sudo nano  /etc/ssh/sshd_config
+    1) On a user with sudo permissions, open the sshd_config file with **sudo nano /etc/ssh/sshd_config**
     
     2) Look for PermitRootLogin
     
@@ -62,7 +62,7 @@
     
     4) Now save the file and exit
     
-    5) Restart the sshd daemon (the thing basically in charge of handling ssh stuff) with sudo systemctl restart ssh
+    5) Restart the sshd daemon (the thing basically in charge of handling ssh stuff) with **sudo systemctl restart ssh**
     
     6) Root login is now disabled hurray!!
 
@@ -71,31 +71,24 @@
 --------------------------------------------------------------------------------------------------------------------------------
 
 ### HOW TO :: INSTALL LINUX UPDATES
-    1) To see if there’s updates to current packages: sudo apt update
+    1) To see if there’s updates to current packages: **sudo apt update**
     
-    2) Pull newest updates to current packages: sudo apt upgrade
+    2) Pull newest updates to current packages: **sudo apt upgrade**
 
 --------------------------------------------------------------------------------------------------------------------------------
 
 ### HOW TO :: INSTALL NEW LINUX PACKAGES
-    1) To install, run sudo apt install <PKG>
+    1) To install, run **sudo apt install <PKG>**
     
-    2) To uninstall, run sudo apt purge <PKG>
+    2) To uninstall, run **sudo apt purge <PKG>**
 
 --------------------------------------------------------------------------------------------------------------------------------
 
 ### HOW TO :: INSTALL NGINX
     1) Install linux updates
     
-    2) Install nginx by running ***sudo apt install nginx***
+    2) Install nginx by running **sudo apt install nginx**
 
-    3) To configure firewall to allow traffic, run sudo ufw allow 'Nginx HTTP'
-
---------------------------------------------------------------------------------------------------------------------------------
-
-### HOW TO :: INSTALL NEW LINUX PACKAGES
-    1) To install, run sudo apt install <PKG>
-    
-    2) To uninstall, run sudo apt purge <PKG>
+    3) To configure firewall to allow traffic, run **sudo ufw allow 'Nginx HTTP'**
 
 --------------------------------------------------------------------------------------------------------------------------------
