@@ -23,6 +23,8 @@
 
     2) Go into your user from root or any other host that has access to that user (**ssh root@YOUR_IP_ADDRESS**)
 
+    3) Create a .ssh folder by running **mkdir ~/.ssh**
+
     3) Use **nano ~/.ssh/authorized_keys** to get a terminal text editor that creates/edits the file authorized_keys
 
     4) Paste in your current computer’s public key
