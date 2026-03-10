@@ -20,6 +20,8 @@
     * sudo systemctl enable nginx
         to have nginx start up as soon as server is up (default setting)
 
+--------------------------------------------------------------------------------------------------------------------------------
+
 ### GETTING GUNICORN TO RUN ON YOUR DOMAIN _LOCALLY_
     1) Run **sudo nano /etc/hosts**
     
@@ -34,4 +36,5 @@
     need for an established DNS (domain name system) or essentially the internet's phonebook (connecting domains to ips)
     
     6) To make the changes to **/etc/hosts** permanent, make the same change in **/etc/cloud/templates/hosts.debian.tmpl**   
+
 
