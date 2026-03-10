@@ -21,7 +21,7 @@
         to have nginx start up as soon as server is up (default setting)
 
 ### GETTING GUNICORN TO RUN ON YOUR DOMAIN _LOCALLY_
-    1) Run sudo nano /etc/hosts
+    1) Run **sudo nano /etc/hosts**
     
     2) Take your VM's outward facing IP address and paste that in below the other addresses
     
@@ -33,4 +33,5 @@
     5) This essentially maps a hostname (in this case your domain) to a server's ip and allows you to bypass the 
     need for an established DNS (domain name system) or essentially the internet's phonebook (connecting domains to ips)
     
-    6) To make the changes to /etc/hosts permanent, make the same change in /etc/cloud/templates/hosts.debian.tmpl   
+    6) To make the changes to **/etc/hosts** permanent, make the same change in **/etc/cloud/templates/hosts.debian.tmpl**   
+
