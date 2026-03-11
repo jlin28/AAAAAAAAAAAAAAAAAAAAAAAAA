@@ -37,4 +37,9 @@
     
     6) To make the changes to **/etc/hosts** permanent, make the same change in **/etc/cloud/templates/hosts.debian.tmpl**   
 
+--------------------------------------------------------------------------------------------------------------------------------
 
+### GETTING CHANGES TO YOUR PYTHON FILE SHOWN ON YOUR DOMAIN
+    1) Run **sudo systemctl restart [APP_DIRECTORY]**
+
+    2) You may need to run **sudo systemctl daemon-reload** if terminal prompts it
