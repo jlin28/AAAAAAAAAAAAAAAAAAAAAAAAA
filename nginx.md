@@ -43,3 +43,8 @@
     1) Run **sudo systemctl restart [APP_DIRECTORY]**
 
     2) You may need to run **sudo systemctl daemon-reload** if terminal prompts it
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+### SEEING FLASK MESSAGES
+    1) Read the /var/log/nginx/access.log file with smth like nano or cat
