@@ -52,3 +52,4 @@ server {
 13) Run ```sudo ufw delete allow 5000```
 14) Somehow this works!!
 
+P.S. This does not work. The session cookies don't work at all so there's no way to save data or make blogs or anything like that!!
