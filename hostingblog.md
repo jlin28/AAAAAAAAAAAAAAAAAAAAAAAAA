@@ -15,7 +15,7 @@ if __name__ == "__main__":
 ```
 6) Edit your `__init__.py`'s `app.run()` by replacing it with `app.run(host='0.0.0.0')`
 7) Allow access to port 5000 with ```sudo ufw allow 5000```
-8) Configure Gunicorn by running ```gunicorn --bind 0.0.0.0:5000 wsgi:app``` 
+8) Configure Gunicorn by running ```gunicorn --bind 0.0.0.0:5000 wsgi:app```. If this step doesn't work, try seeing if your python file runs normally with ```python app/__init__.py```.
 9) Run ```sudo nano /etc/systemd/system/<FLASK_APP>.service``` and paste the following: (You need to `CTRL + \` (replace) `<USER>, <FLASK_APP>, and <ENV>` with the right names)
 
 ```
@@ -50,6 +50,5 @@ server {
 11) Run ```sudo ln -s /etc/nginx/sites-available/<FLASK_APP> /etc/nginx/sites-enabled```
 12) Run ```sudo systemctl restart nginx```
 13) Run ```sudo ufw delete allow 5000```
-14) Somehow this works!!
-
-P.S. This does not work. The session cookies don't work at all so there's no way to save data or make blogs or anything like that!!
+14) Edit the ```app.secret_key``` var in `__init__.py` to a static var instead of os.random().
+15) Get the newest version running with ```sudo systemctl restart <FLASK_APP>```
