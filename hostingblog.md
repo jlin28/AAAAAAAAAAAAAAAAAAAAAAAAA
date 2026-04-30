@@ -2,7 +2,7 @@ This guide assumes you've already done the steps in https://www.digitalocean.com
 
 1) Run ```git clone <FLASK_APP>``` on ur home page (or whatever page but do home page cause that's how I did it)
 2) Go into Flask app: ```cd <FLASK_APP>```
-3) Make virtual env in Flask app folder: ```python3 -m venv <ENV>``` and run it
+3) Make virtual env in Flask app folder: ```python3 -m venv <ENV>``` and run it with ```source <ENV>/bin/activate```
 4) Install Flask by running ```pip install -r requirements.txt```
 5) Install gunicorn by running ```pip install gunicorn```
 6) Run ```nano wsgi.py``` and paste the following: (NOTE: `<SUBDIRECTORY>` refers to if your `__init__.py` is somewhere like `~/<FLASK_APP>/app/__init__.py` and can be disregarded if its not)
